@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    font-family: cursive;
+}
+
+.container{
+text-align: center;
+background-color: rgba(240, 248, 255, 0.386);
+width: 500px;
+padding: 20px;
+border-radius: 13px;
+box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.753);
+border: none;
+display: grid;
+margin: 100px 0 auto;
+}
+
+.container h1{
+    padding: 10px;
+    text-shadow: rgb(17, 0, 255) 1px 0 15px;
+    color: white;
+    
+}
+
+
+
+#form{
+    height: 23px;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    box-shadow: rgb(17, 0, 255) 1px 0 15px;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+
+
+#add{
+    border: none;
+    height: 30px;
+    width: 20%;
+    color: rgba(255, 255, 255, 0.507);
+    text-shadow: rgb(255, 255, 255) 1px 0 15px;
+    border-radius: 10px;
+    background-color: rgb(61, 106, 201);
+    font-size: 0.9;
+    position: relative;
+    left: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#add:hover{
+    background-color: rgb(80, 126, 225);
+}
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+}
+
+.task{
+    width: inherit;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 9px;
+    box-shadow: rgb(66, 59, 163) 1px 0 15px;
+    border-bottom: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.task-done{
+    background-color: rgb(119, 235, 119);
+    text-decoration: line-through;
+}
+
+i{
+    cursor: pointer;
+}
+
+#completed{
+    color: green;
+}
+
+#x{
+    color: red;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+       .container{
+        width: 40%;
+       }
+
+       h1{
+        font-size: 1.5em;
+       }
+}
+
+
+@media only screen and (max-width: 768px) {
+   body{
+    height: 100vh;
+   }
+
+    .container{
+    width: 80%;
+}
+
+
+h1{
+    font-size: 1.5em;
+   }
+
+.list-info{
+    flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 300px) and (max-width: 335px) {
+    body{
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+ 
+   #add{
+    font-size: 0.7em;
+    width: 60px;
+    margin-bottom: 10px;
+   }
+
+     .container{
+     width: 80%;
+ }
+}
